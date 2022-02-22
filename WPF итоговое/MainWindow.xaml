@@ -1,0 +1,59 @@
+﻿<Window x:Class="WPF_итоговое.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_итоговое"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>            
+            <ColumnDefinition/>            
+            <ColumnDefinition/>            
+            <ColumnDefinition/>            
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <!-- Кнопки цифр-->
+        <Button x:Name="btn7" Grid.Row="2" Grid.Column="0" Margin="1" Padding="1"  FontFamily="Calibri" FontWeight="Light" FontSize="30" Click="btn7_Click" >7</Button>
+        <Button x:Name="btn8" Grid.Row="2" Grid.Column="1" Margin="1" Padding="1" FontFamily="Calibri" FontWeight="Light" FontSize="30" Click="btn8_Click">8</Button>
+        <Button x:Name="btn9" Grid.Row="2" Grid.Column="2" Margin="1" Padding="1" FontFamily="Calibri" FontWeight="Light" FontSize="30" Click="btn9_Click">9</Button>
+        <Button x:Name="btn4" Grid.Row="3" Grid.Column="0" Margin="1" Padding="1" FontFamily="Calibri" FontWeight="Light" FontSize="30" Click="btn4_Click">4</Button>
+        <Button x:Name="btn5" Grid.Row="3" Grid.Column="1" Margin="1" Padding="1" FontFamily="Calibri" FontWeight="Light" FontSize="30" Click="btn5_Click">5</Button>
+        <Button x:Name="btn6" Grid.Row="3" Grid.Column="2" Margin="1" Padding="1" FontFamily="Calibri" FontWeight="Light" FontSize="30" Click="btn6_Click">6</Button>
+        <Button x:Name="btn1" Grid.Row="4" Grid.Column="0" Margin="1" Padding="1" FontFamily="Calibri" FontWeight="Light" FontSize="30" Click="btn1_Click" >1</Button>
+        <Button x:Name="btn2" Grid.Row="4" Grid.Column="1" Margin="1" Padding="1" FontFamily="Calibri" FontWeight="Light" FontSize="30" Click="btn2_Click">2</Button>
+        <Button x:Name="btn3" Grid.Row="4" Grid.Column="2" Margin="1" Padding="1" FontFamily="Calibri" FontWeight="Light" FontSize="30" Click="btn3_Click">3</Button>
+        <Button x:Name="btn0" Grid.Row="5" Grid.Column="1" Margin="1" Padding="1" FontFamily="Calibri" FontWeight="Light" FontSize="30" Click="btn0_Click">0</Button>
+        <Button x:Name="btnPI" Grid.Row="5" Grid.Column="2" Margin="1" Padding="1" FontFamily="Calibri" FontWeight="Light" FontSize="30" Click="btnPI_Click" >PI</Button>
+
+        <!-- Кнопки математических выражений-->
+        <Button x:Name="btnPlus" Grid.Row="1" Grid.Column="3" Margin="1" Padding="1" FontFamily="Calibri" FontWeight="Light" FontSize="30" Click="btnPlus_Click">+</Button>
+        <Button x:Name="btnMinus" Grid.Row="2" Grid.Column="3" Margin="1" Padding="1" FontFamily="Calibri" FontWeight="Light" FontSize="30" Click="btnMinus_Click">-</Button>
+        <Button x:Name="btnTimes" Grid.Row="3" Grid.Column="3" Margin="1" Padding="1" FontFamily="Calibri" FontWeight="Light" FontSize="30" Click="btnTimes_Click">*</Button>
+        <Button x:Name="btnDivide" Grid.Row="4" Grid.Column="3" Margin="1" Padding="1" FontFamily="Calibri" FontWeight="Light" FontSize="30" Click="btnDivide_Click">/</Button>
+        <Button x:Name="btnEquals" Grid.Row="5" Grid.Column="3" Margin="1" Padding="1" FontFamily="Calibri" FontWeight="Light" FontSize="30" Click="btnEquals_Click">=</Button>
+
+        <!-- Кнопка удаления-->
+        <Button x:Name="btnCkearEntry" Grid.Row="1" Grid.Column="0" Margin="1" Padding="1" FontFamily="Calibri" FontWeight="Light" FontSize="30" Foreground="Red" Background="LightGoldenrodYellow" Click="btnCkearEntry_Click">CE</Button>
+        <Button x:Name="btnClear" Grid.Row="1" Grid.Column="1" Margin="1" Padding="1" FontFamily="Calibri" FontWeight="Light" FontSize="30" Foreground="Red" Background="LightGoldenrodYellow" Click="btnClear_Click">C</Button>
+        <Button x:Name="btnBackspace" Grid.Row="1" Grid.Column="2" Margin="1" Padding="1" Content="&lt;=" FontFamily="Calibri" FontWeight="Light" Foreground="Red" Background="LightGoldenrodYellow" FontSize="30" Click="btnBackspace_Click"></Button>
+
+        <!-- Положительные и отрицательные числа-->
+        <Button x:Name="btnPositiveNegative" Grid.Row="5" Grid.Column="0" Margin="1" Padding="1" FontFamily="Calibri" FontWeight="Light" FontSize="30" Click="btnPositiveNegative_Click">+-</Button>
+
+        <!-- Экран-->
+        <TextBox x:Name="txtDisplay" IsReadOnly="True" Background="AliceBlue" Margin="1" Padding="1" BorderBrush="Black" TextAlignment="Right" VerticalAlignment="Bottom" FontFamily="Calibri" FontWeight="Light" FontSize="50"
+                 BorderThickness="1" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4">0</TextBox>
+
+    </Grid>
+</Window>
